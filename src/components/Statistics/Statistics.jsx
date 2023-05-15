@@ -5,7 +5,8 @@ import css from './Statistics.module.css'
 const Statistics = ({title, stats}) => {
   return (
   <section class={css.statistics}>
-    <h2 class={css.title}>{title}</h2>
+    {title !== '' && (<h2 class={css.title}>{title}</h2>)}
+    
 
     <ul class={css.statList}>
 
