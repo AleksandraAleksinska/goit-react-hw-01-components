@@ -4,12 +4,12 @@ import css from './FriendList.module.css'
 
 const FriendListItem = ({avatar, name, isOnline}) => {
   return (
-      <li class={css.item}>
+      <li className={css.item}>
 
-        {isOnline === true ? (<span class={css.isOnline}>{isOnline}</span>) : (<span class={css.status}>{isOnline}</span>)}
+        {isOnline === true ? (<span className={css.isOnline}>{isOnline}</span>) : (<span className={css.status}>{isOnline}</span>)}
         
-        <img class={css.avatar} src={avatar} alt="User avatar" width="48" />
-        <p class={css.name}>{name}</p>
+        <img className={css.avatar} src={avatar} alt="User avatar" width="48" />
+        <p className={css.name}>{name}</p>
       </li>
   )
 }
@@ -17,7 +17,7 @@ const FriendListItem = ({avatar, name, isOnline}) => {
 const FriendList = ({friends}) => {
 
   return (
-    <ul class={css.friendList}>
+    <ul className={css.friendList}>
        {friends.map(friend => 
         <FriendListItem 
             key={friend.id}

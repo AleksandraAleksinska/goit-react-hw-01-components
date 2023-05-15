@@ -6,7 +6,7 @@ import friends from '../data/friends';
 import transactions from '../data/transactions';
 import Statistics from '../components/Statistics/Statistics';
 import FriendList from '../components/FriendList/FriendList';
-import TransactionHistory from "./TransactionHistory";
+import TransactionHistory from '../components/TransactionHistory/TransactionHistory';
 
 
 

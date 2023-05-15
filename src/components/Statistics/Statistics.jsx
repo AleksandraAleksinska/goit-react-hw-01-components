@@ -4,16 +4,16 @@ import css from './Statistics.module.css'
 
 const Statistics = ({title, stats}) => {
   return (
-  <section class={css.statistics}>
-    {title !== '' && (<h2 class={css.title}>{title}</h2>)}
+  <section className={css.statistics}>
+    {title !== '' && (<h2 className={css.title}>{title}</h2>)}
     
 
-    <ul class={css.statList}>
+    <ul className={css.statList}>
 
     {stats.map(s=> (
-        <li key={s.id}class={css.item}>
-        <span class={css.label}>{s.label} </span>
-        <span class={css.percentage}>{s.percentage}%</span>
+        <li key={s.id}className={css.item}>
+        <span className={css.label}>{s.label} </span>
+        <span className={css.percentage}>{s.percentage}%</span>
       </li>
     ))}
 
