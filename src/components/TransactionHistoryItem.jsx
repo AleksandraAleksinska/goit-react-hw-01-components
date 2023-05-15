@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from "prop-types";
 
 const TransactionHistoryItem = ({id, type, amount, currency}) => {
   return (
@@ -8,6 +9,15 @@ const TransactionHistoryItem = ({id, type, amount, currency}) => {
       <td>{currency}</td>
     </tr>
   )
+}
+
+TransactionHistoryItem.propTypes = {
+  id: PropTypes.string,
+  type: PropTypes.string,
+  amount: PropTypes.string,
+  currency: PropTypes.string
+
+
 }
 
 export default TransactionHistoryItem

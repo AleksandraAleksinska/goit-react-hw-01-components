@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from "prop-types";
 
 const Statistics = ({title, stats}) => {
   return (
@@ -8,7 +9,7 @@ const Statistics = ({title, stats}) => {
   <ul class="stat-list">
 
     {stats.map(s=> (
-        <li class="item">
+        <li key={s.id}class="item">
         <span class="label">{s.label} </span>
         <span class="percentage">{s.percentage}</span>
       </li>
@@ -17,6 +18,11 @@ const Statistics = ({title, stats}) => {
   </ul>
 </section>
   )
+}
+
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.array
 }
 
 export default Statistics

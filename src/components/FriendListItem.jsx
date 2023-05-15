@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from "prop-types";
 
-const FriendListItem = ({avatar, name, isOnline}) => {
+const FriendListItem = ({avatar, name, isOnline, id}) => {
     return (
         <li class="item">
             <span class="status">{isOnline}</span>
@@ -8,6 +9,12 @@ const FriendListItem = ({avatar, name, isOnline}) => {
             <p class="name">{name}</p>
         </li>
     )
+}
+
+FriendListItem.propTypes = {
+    avatar: PropTypes.string,
+    name: PropTypes.string,
+    isOnline: PropTypes.bool
 }
 
 export default FriendListItem
