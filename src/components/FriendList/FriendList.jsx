@@ -3,7 +3,6 @@ import FriendListItem from './FriendListItem';
 import PropTypes from "prop-types";
 import css from './FriendList.module.css';
 
-
 const FriendList = ({friends}) => {
 
   return (
@@ -31,4 +30,4 @@ FriendList.propTypes = {
 }
 
 
-export default FriendList;
+export default FriendList
